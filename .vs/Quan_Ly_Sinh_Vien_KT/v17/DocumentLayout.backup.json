@@ -1,0 +1,486 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|d:\\ado_net\\quan_ly_sinh_vien_kt\\quan_ly_sinh_vien_kt\\views\\admin\\adminmainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|solutionrelative:quan_ly_sinh_vien_kt\\views\\admin\\adminmainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|d:\\ado_net\\quan_ly_sinh_vien_kt\\quan_ly_sinh_vien_kt\\views\\admin\\adminmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|solutionrelative:quan_ly_sinh_vien_kt\\views\\admin\\adminmainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|d:\\ado_net\\quan_ly_sinh_vien_kt\\quan_ly_sinh_vien_kt\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|solutionrelative:quan_ly_sinh_vien_kt\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|d:\\ado_net\\quan_ly_sinh_vien_kt\\quan_ly_sinh_vien_kt\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|solutionrelative:quan_ly_sinh_vien_kt\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|d:\\ado_net\\quan_ly_sinh_vien_kt\\quan_ly_sinh_vien_kt\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|solutionrelative:quan_ly_sinh_vien_kt\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|d:\\ado_net\\quan_ly_sinh_vien_kt\\quan_ly_sinh_vien_kt\\images\\student_avatar.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|solutionrelative:quan_ly_sinh_vien_kt\\images\\student_avatar.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|d:\\ado_net\\quan_ly_sinh_vien_kt\\quan_ly_sinh_vien_kt\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C5120BC-6718-41A1-BDCE-BD2E320AA4F1}|Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj|solutionrelative:quan_ly_sinh_vien_kt\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\Login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\AdminMainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Quan_Ly_Sinh_Vien_KT\\AdminMainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminMainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Views\\Admin\\AdminMainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\Views\\Admin\\AdminMainWindow.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Views\\Admin\\AdminMainWindow.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\Views\\Admin\\AdminMainWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:38:38.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminMainWindow.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Views\\Admin\\AdminMainWindow.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\Views\\Admin\\AdminMainWindow.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Views\\Admin\\AdminMainWindow.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\Views\\Admin\\AdminMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:38:36.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDashboardWindow.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:03:22.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserManagementView.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:00:32.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\MainWindow.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MainWindow.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T13:48:46.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserManagementView.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\UserManagementView.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:13:55.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserRoleManagementView.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:08:49.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SubjectManagementView.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:02:18.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentRegistrationView.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:10:17.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentManagementView.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:10:10.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StudentRegistrationView.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\StudentRegistrationView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:03:04.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StudentProfileView.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:03:38.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StudentManagementView.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\StudentManagementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T13:59:54.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RoleManagementView.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:00:58.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProvinceManagementView.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:02:45.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MySubjectsView.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:05:52.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\App.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\App.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\App.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T14:06:15.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Login.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\Login.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Login.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T13:58:16.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\AssemblyInfo.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\AssemblyInfo.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:12:38.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SubjectManagementView.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\SubjectManagementView.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:10:15.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "StudentProfileView.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\StudentProfileView.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:10:13.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RoleManagementView.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\RoleManagementView.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:10:09.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProvinceManagementView.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\ProvinceManagementView.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:10:07.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MySubjectsView.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\MySubjectsView.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:10:03.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserRoleManagementView.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\UserRoleManagementView.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:09:36.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UserDashboardWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\UserDashboardWindow.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T14:07:19.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "student_avatar.jpg",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Images\\student_avatar.jpg",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\Images\\student_avatar.jpg",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Images\\student_avatar.jpg",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\Images\\student_avatar.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-04-12T14:04:59.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AdminMainWindow.xaml",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\AdminMainWindow.xaml",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\AdminMainWindow.xaml",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\AdminMainWindow.xaml",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\AdminMainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T13:59:09.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Quan_Ly_Sinh_Vien_KT\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Quan_Ly_Sinh_Vien_KT\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T13:48:38.286Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

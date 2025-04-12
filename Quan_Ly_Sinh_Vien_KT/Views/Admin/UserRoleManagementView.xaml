@@ -1,0 +1,66 @@
+﻿<!-- UserRoleManagementView.xaml -->
+<Window x:Class="Quan_Ly_Sinh_Vien_KT.Views.Admin.ProvinceManagementView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Quan_Ly_Sinh_Vien_KT.Views.Admin"
+        mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="PHÂN QUYỀN NGƯỜI DÙNG" 
+                   FontSize="20" FontWeight="Bold" Margin="0,10,0,20"/>
+
+        <!-- Form for assigning roles to users -->
+        <Grid Grid.Row="1" Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Người dùng:" Margin="5"/>
+            <ComboBox Grid.Row="0" Grid.Column="1" x:Name="cbUser" Margin="5" 
+                      DisplayMemberPath="Username"/>
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Vai trò:" Margin="5"/>
+            <ComboBox Grid.Row="1" Grid.Column="1" x:Name="cbRole" Margin="5" 
+                      DisplayMemberPath="RoleName"/>
+
+            <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+                        Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,5">
+                <Button x:Name="btnAssignRole" Content="Phân quyền" Width="120" Height="30" Margin="5"
+                        Background="#2196F3" Foreground="White"/>
+                <Button x:Name="btnRemoveRole" Content="Xóa quyền" Width="120" Height="30" Margin="5"
+                        Background="#F44336" Foreground="White"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Data grid for displaying user roles -->
+        <DataGrid Grid.Row="2" x:Name="dgUserRoles" AutoGenerateColumns="False" 
+                  IsReadOnly="True" AlternatingRowBackground="#F5F5F5">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Người dùng" Binding="{Binding Username}" Width="*"/>
+                <DataGridTextColumn Header="Vai trò" Binding="{Binding RoleName}" Width="*"/>
+                <DataGridTemplateColumn Header="Thao tác" Width="80">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Xóa" Margin="2" Padding="5,0"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

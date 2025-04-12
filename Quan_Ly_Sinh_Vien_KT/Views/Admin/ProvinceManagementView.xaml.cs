@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Markup;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
+{
+    /// <summary>
+    /// Interaction logic for ProvinceManagementView.xaml
+    /// </summary>
+    public partial class ProvinceManagementView : Window
+    {
+        public ProvinceManagementView()
+        {
+            InitializeComponent();
+        }
+
+        // Remove duplicate explicit implementation of IComponentConnector.Connect
+        void IComponentConnector.Connect(int connectionId, object target)
+        {
+            // Implementation logic for connecting components
+        }
+    }
+}
