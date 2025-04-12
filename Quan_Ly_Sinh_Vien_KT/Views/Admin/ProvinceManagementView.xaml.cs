@@ -18,7 +18,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
     /// <summary>
     /// Interaction logic for ProvinceManagementView.xaml
     /// </summary>
-    public partial class ProvinceManagementView : Window
+    public partial class ProvinceManagementView : Window, IComponentConnector
     {
         public ProvinceManagementView()
         {
@@ -26,7 +26,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
         }
 
         // Remove duplicate explicit implementation of IComponentConnector.Connect
-        void IComponentConnector.Connect(int connectionId, object target)
+        public void Connect(int connectionId, object target)
         {
             // Implementation logic for connecting components
         }

@@ -29,9 +29,9 @@
 
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20">
             <Button x:Name="btnLogin" Content="Đăng nhập" Width="100" Height="35" 
-                    Margin="10" Background="#007ACC" Foreground="White"/>
+                    Margin="10" Background="#007ACC" Foreground="White" Click="btnLogin_Click"/>
             <Button x:Name="btnExit" Content="Thoát" Width="100" Height="35" 
-                    Margin="10" Background="#E81123" Foreground="White"/>
+                    Margin="10" Background="#E81123" Foreground="White" Click="btnExit_Click"/>
         </StackPanel>
     </Grid>
 </Window>

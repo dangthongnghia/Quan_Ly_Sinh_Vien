@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Quan_Ly_Sinh_Vien_KT
+namespace Quan_Ly_Sinh_Vien_KT.Views.User
 {
     /// <summary>
     /// Interaction logic for StudentProfileView.xaml

@@ -23,5 +23,10 @@ namespace Quan_Ly_Sinh_Vien_KT
         {
             InitializeComponent();
         }
+
+        private void txtUsername_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

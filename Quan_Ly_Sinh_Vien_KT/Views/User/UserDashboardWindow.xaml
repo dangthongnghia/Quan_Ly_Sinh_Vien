@@ -1,5 +1,5 @@
 ﻿<!-- UserDashboardWindow.xaml -->
-<Window x:Class="Quan_Ly_Sinh_Vien_KT.UserDashboardWindow"
+<Window x:Class="Quan_Ly_Sinh_Vien_KT.Views.User.UserDashboardWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
