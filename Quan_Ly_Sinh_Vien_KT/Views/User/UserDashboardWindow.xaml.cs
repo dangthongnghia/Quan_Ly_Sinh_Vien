@@ -23,5 +23,20 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.User
         {
             InitializeComponent();
         }
+
+        private void btnProfile_Click(object sender, RoutedEventArgs e)
+        {
+            contentControl.Content = new StudentProfileView();
+        }
+
+        private void btnRegisterSubjects_Click(object sender, RoutedEventArgs e)
+        {
+            contentControl.Content = new StudentRegistrationView();
+        }
+
+        private void btnMySubjects_Click(object sender, RoutedEventArgs e)
+        {
+            contentControl.Content = new MySubjectsView();
+        }
     }
 }

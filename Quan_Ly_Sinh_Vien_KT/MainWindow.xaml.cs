@@ -10,8 +10,10 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Configuration;
 using Microsoft.Data.SqlClient;
+using Quan_Ly_Sinh_Vien_KT.Models;
 using Quan_Ly_Sinh_Vien_KT.Views.Admin;
 namespace Quan_Ly_Sinh_Vien_KT;
+
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
@@ -59,7 +61,7 @@ public partial class MainWindow : Window
 
                 switch (role.ToLower())
                 {
-                    case "Admin":
+                    case "admin":
                         AdminMainWindow adminView = new AdminMainWindow();
                         adminView.Show();
                         this.Close();
@@ -70,6 +72,14 @@ public partial class MainWindow : Window
                         // Redirect to the user dashboard
                         Views.User.UserDashboardWindow userDashboard = new Views.User.UserDashboardWindow();
                         userDashboard.Show();
+                        this.Close();
+                        break;
+
+                    case "2308005":
+                        // Define behavior for role '2308005'
+                        MessageBox.Show("Welcome, user with role 2308005!");
+                        AdminMainWindow adminView2308005 = new AdminMainWindow();
+                        adminView2308005.Show();
                         this.Close();
                         break;
 
@@ -95,6 +105,8 @@ public partial class MainWindow : Window
 
     private void btnExit_Click(object sender, RoutedEventArgs e)
     {
+        Application.Current.Shutdown();
+
 
     }
 }

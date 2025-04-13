@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Quan_Ly_Sinh_Vien_KT.Views.Admin.StudentRegistrationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="ĐĂNG KÝ MÔN HỌC CỦA SINH VIÊN" 
+                   FontSize="20" FontWeight="Bold" Margin="0,10,0,20" 
+                   HorizontalAlignment="Center"/>
+
+        <DataGrid Grid.Row="1" x:Name="dgRegistrations" AutoGenerateColumns="False" 
+                  IsReadOnly="True" AlternatingRowBackground="#F5F5F5" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã Sinh Viên" Binding="{Binding StudentId}" Width="150"/>
+                <DataGridTextColumn Header="Họ và Tên" Binding="{Binding StudentName}" Width="200"/>
+                <DataGridTextColumn Header="Mã Môn Học" Binding="{Binding SubjectId}" Width="150"/>
+                <DataGridTextColumn Header="Tên Môn Học" Binding="{Binding SubjectName}" Width="*"/>
+                <DataGridTextColumn Header="Ngày Đăng Ký" Binding="{Binding RegistrationDate, StringFormat=dd/MM/yyyy}" Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
