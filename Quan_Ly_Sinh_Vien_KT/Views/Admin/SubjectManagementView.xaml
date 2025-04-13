@@ -1,5 +1,5 @@
 ﻿<!-- SubjectManagementView.xaml -->
-<Window x:Class="Quan_Ly_Sinh_Vien_KT.Views.Admin.SubjectManagementView"
+<UserControl x:Class="Quan_Ly_Sinh_Vien_KT.Views.Admin.SubjectManagementView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -37,9 +37,6 @@
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Tên môn học:" Margin="5"/>
             <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtSubjectName" Margin="5" Padding="3"/>
 
-            <TextBlock Grid.Row="2" Grid.Column="0" Text="Số tín chỉ:" Margin="5"/>
-            <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtCredits" Margin="5" Padding="3"/>
-
             <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" 
                         Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,5">
                 <Button x:Name="btnAddSubject" Content="Thêm mới" Width="90" Height="30" Margin="5"
@@ -73,4 +70,4 @@
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
-</Window>
+</UserControl>

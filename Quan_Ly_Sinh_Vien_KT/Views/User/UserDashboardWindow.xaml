@@ -12,8 +12,8 @@
             <ColumnDefinition Width="200"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-
-        <!-- Left Navigation Panel -->
+        <DockPanel>
+            <!-- Left Navigation Panel -->
         <Border Grid.Column="0" Background="#3498DB">
             <StackPanel>
                 <TextBlock Text="SINH VIÊN" Foreground="White" 
@@ -32,19 +32,19 @@
                         Style="{StaticResource {x:Type Button}}"
                         Height="40" Margin="10,5" Background="Transparent" 
                         BorderThickness="0" Foreground="White"
-                        HorizontalContentAlignment="Left" Padding="10,0"/>
+                        HorizontalContentAlignment="Left" Padding="10,0" Click="btnProfile_Click"/>
 
                 <Button x:Name="btnRegisterSubjects" Content="Đăng ký môn học" 
                         Style="{StaticResource {x:Type Button}}"
                         Height="40" Margin="10,5" Background="Transparent" 
                         BorderThickness="0" Foreground="White"
-                        HorizontalContentAlignment="Left" Padding="10,0"/>
+                        HorizontalContentAlignment="Left" Padding="10,0" Click="btnRegisterSubjects_Click"/>
 
                 <Button x:Name="btnMySubjects" Content="Môn học đã đăng ký" 
                         Style="{StaticResource {x:Type Button}}"
                         Height="40" Margin="10,5" Background="Transparent" 
                         BorderThickness="0" Foreground="White"
-                        HorizontalContentAlignment="Left" Padding="10,0"/>
+                        HorizontalContentAlignment="Left" Padding="10,0" Click="btnMySubjects_Click"/>
 
                 <Separator Background="#2980B9" Margin="10,10"/>
 
@@ -58,5 +58,6 @@
 
         <!-- Content Area -->
         <ContentControl Grid.Column="1" x:Name="contentControl" Margin="10"/>
+        </DockPanel>
     </Grid>
 </Window>
