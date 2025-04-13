@@ -10,8 +10,8 @@ namespace Quan_Ly_Sinh_Vien_KT.Models
     {
         public int Id { get; set; }
 
-        public int UserId { get; set; }
-        public int RoleId { get; set; }
+        public string IdStudent { get; set; }
+        public string IdRole { get; set; }
 
         // Navigation properties
         public User User { get; set; }

@@ -53,8 +53,8 @@
         <DataGrid Grid.Row="2" x:Name="dgRoles" AutoGenerateColumns="False" 
                   IsReadOnly="True" AlternatingRowBackground="#F5F5F5">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã vai trò" Binding="{Binding RoleId}" Width="120"/>
-                <DataGridTextColumn Header="Tên vai trò" Binding="{Binding RoleName}" Width="*"/>
+                <DataGridTextColumn Header="Mã vai trò" Binding="{Binding Id}" Width="120"/>
+                <DataGridTextColumn Header="Tên vai trò" Binding="{Binding Name}" Width="*"/>
                 <DataGridTemplateColumn Header="Thao tác" Width="100">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

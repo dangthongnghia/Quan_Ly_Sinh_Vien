@@ -190,3 +190,5 @@ D:\ADO_Net\Quan_Ly_Sinh_Vien_KT\Quan_Ly_Sinh_Vien_KT\obj\Debug\net8.0-windows\Vi
 D:\ADO_Net\Quan_Ly_Sinh_Vien_KT\Quan_Ly_Sinh_Vien_KT\obj\Debug\net8.0-windows\Quan_Ly_.243B0096.Up2Date
 D:\ADO_Net\Quan_Ly_Sinh_Vien_KT\Quan_Ly_Sinh_Vien_KT\obj\Debug\net8.0-windows\Views\Admin\StudentRegistrationView.baml
 D:\ADO_Net\Quan_Ly_Sinh_Vien_KT\Quan_Ly_Sinh_Vien_KT\obj\Debug\net8.0-windows\Views\Admin\StudentRegistrationView.g.cs
+E:\.DotNet\ADO\QLSV\Quan_Ly_Sinh_Vien_KT\obj\Debug\net8.0-windows\Views\Admin\StudentRegistrationView.baml
+E:\.DotNet\ADO\QLSV\Quan_Ly_Sinh_Vien_KT\obj\Debug\net8.0-windows\Views\Admin\StudentRegistrationView.g.cs

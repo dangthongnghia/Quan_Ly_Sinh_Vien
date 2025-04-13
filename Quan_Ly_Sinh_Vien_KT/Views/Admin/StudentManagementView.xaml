@@ -61,9 +61,9 @@
         <DataGrid Grid.Row="2" x:Name="dgStudents" AutoGenerateColumns="False" 
                   IsReadOnly="True" AlternatingRowBackground="#F5F5F5">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã SV" Binding="{Binding StudentId}" Width="100"/>
-                <DataGridTextColumn Header="Họ và tên" Binding="{Binding FullName}" Width="*"/>
-                <DataGridTextColumn Header="Ngày sinh" Binding="{Binding Birthday, StringFormat=dd/MM/yyyy}" Width="120"/>
+                <DataGridTextColumn Header="Mã SV" Binding="{Binding Id}" Width="100"/>
+                <DataGridTextColumn Header="Họ và tên" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Ngày sinh" Binding="{Binding BOF, StringFormat=dd/MM/yyyy}" Width="120"/>
                 <DataGridTextColumn Header="Tỉnh/Thành phố" Binding="{Binding Province}" Width="150"/>
                 <DataGridTemplateColumn Header="Thao tác" Width="100">
                     <DataGridTemplateColumn.CellTemplate>

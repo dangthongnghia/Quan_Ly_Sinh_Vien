@@ -28,18 +28,18 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
         SqlCommand cmd;
         SqlDataAdapter adapter;
         DataTable dt;
-        
+
         public UserRoleManagementView()
         {
             InitializeComponent();
             LoadUserRoles();
             LoadUsers();
             LoadRoles();
-            
+            GenerateNextId();
             // Thêm sự kiện click cho các nút
             btnAssignRole.Click += BtnAssignRole_Click;
             btnRemoveRole.Click += BtnRemoveRole_Click;
-            
+
             // Thêm sự kiện cho DataGrid
             dgUserRoles.SelectionChanged += DgUserRoles_SelectionChanged;
         }
@@ -50,15 +50,24 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
             {
                 conn = new SqlConnection(connStr);
                 conn.Open();
-                string query = @"SELECT ur.Id, ur.UserId, ur.RoleId, u.Username, r.Name as RoleName 
-                               FROM UserRole ur
-                               INNER JOIN [User] u ON ur.UserId = u.Username
-                               INNER JOIN Role r ON ur.RoleId = r.Id";
-                cmd = new SqlCommand(query, conn);
+
+                // Cập nhật truy vấn SQL để lấy thêm tên người dùng
+                string query = @"SELECT ur.Id, ur.IdStudent, ur.IdRole, 
+                       u.Username,                     
+                       u.IdStudent as StudentId,      
+                       s.Name as StudentName,         
+                       r.Name as RoleName 
+                       FROM UserRole ur
+                       INNER JOIN [User] u ON ur.IdStudent = u.Username
+                       INNER JOIN Role r ON ur.IdRole = r.Id
+                       LEFT JOIN Student s ON u.IdStudent = s.Id"; 
+        
+
+        cmd = new SqlCommand(query, conn);
                 adapter = new SqlDataAdapter(cmd);
                 dt = new DataTable();
                 adapter.Fill(dt);
-                
+
                 dgUserRoles.ItemsSource = dt.DefaultView;
                 conn.Close();
             }
@@ -67,22 +76,23 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
                 MessageBox.Show("Lỗi kết nối: " + ex.Message);
             }
         }
-        
+        }
+
         private void LoadUsers()
         {
             try
             {
                 conn = new SqlConnection(connStr);
                 conn.Open();
-                string query = "SELECT * FROM [User] WHERE IsActive = 1";
+                string query = "SELECT * FROM [User] WHERE Status = 1";
                 cmd = new SqlCommand(query, conn);
                 adapter = new SqlDataAdapter(cmd);
                 DataTable dtUsers = new DataTable();
                 adapter.Fill(dtUsers);
-                
+
                 cbUser.ItemsSource = dtUsers.DefaultView;
                 cbUser.DisplayMemberPath = "Username";
-                cbUser.SelectedValuePath = "Username";
+                cbUser.SelectedValuePath = "IdStudent";  // Thay đổi thành Id
                 conn.Close();
             }
             catch (Exception ex)
@@ -90,7 +100,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
                 MessageBox.Show("Lỗi kết nối: " + ex.Message);
             }
         }
-        
+
         private void LoadRoles()
         {
             try
@@ -102,7 +112,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
                 adapter = new SqlDataAdapter(cmd);
                 DataTable dtRoles = new DataTable();
                 adapter.Fill(dtRoles);
-                
+
                 cbRole.ItemsSource = dtRoles.DefaultView;
                 cbRole.DisplayMemberPath = "Name";
                 cbRole.SelectedValuePath = "Id";
@@ -112,6 +122,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
             {
                 MessageBox.Show("Lỗi kết nối: " + ex.Message);
             }
+
         }
 
         private void DgUserRoles_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -119,8 +130,9 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
             if (dgUserRoles.SelectedItem != null)
             {
                 DataRowView row = (DataRowView)dgUserRoles.SelectedItem;
-                cbUser.SelectedValue = row["UserId"].ToString();
-                cbRole.SelectedValue = row["RoleId"];
+                txtId.Text = row["Id"].ToString(); // Hiển thị ID khi chọn một bản ghi
+                cbUser.SelectedValue = row["IdStudent"];
+                cbRole.SelectedValue = row["IdRole"];
             }
         }
 
@@ -128,21 +140,54 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
         {
             try
             {
-                if (cbUser.SelectedValue == null || cbRole.SelectedValue == null)
+                if (cbUser.SelectedValue == null)
                 {
-                    MessageBox.Show("Vui lòng chọn người dùng và vai trò!");
+                    MessageBox.Show("Vui lòng chọn người dùng!");
+                    return;
+                }
+
+                if (cbRole.SelectedValue == null)
+                {
+                    MessageBox.Show("Vui lòng chọn vai trò!");
+                    return;
+                }
+
+                // Kiểm tra xem Id đã được nhập chưa
+                if (string.IsNullOrWhiteSpace(txtId.Text))
+                {
+                    MessageBox.Show("Vui lòng nhập ID!");
+                    return;
+                }
+
+                // Kiểm tra Id có phải là số nguyên không
+                if (!int.TryParse(txtId.Text, out int id))
+                {
+                    MessageBox.Show("ID phải là số nguyên!");
+                    return;
+                }
+
+                // Kiểm tra xem Id đã tồn tại chưa
+                conn = new SqlConnection(connStr);
+                conn.Open();
+                string checkIdQuery = "SELECT COUNT(*) FROM [UserRole] WHERE Id = @Id";
+                cmd = new SqlCommand(checkIdQuery, conn);
+                cmd.Parameters.AddWithValue("@Id", id);
+                int idCount = (int)cmd.ExecuteScalar();
+
+                if (idCount > 0)
+                {
+                    MessageBox.Show("ID này đã tồn tại, vui lòng nhập ID khác!");
+                    conn.Close();
                     return;
                 }
 
                 // Kiểm tra xem phân quyền đã tồn tại chưa
-                conn = new SqlConnection(connStr);
-                conn.Open();
-                string checkQuery = "SELECT COUNT(*) FROM UserRole WHERE UserId = @UserId AND RoleId = @RoleId";
+                string checkQuery = "SELECT COUNT(*) FROM [UserRole] WHERE IdStudent = @IdStudent AND IdRole = @IdRole";
                 cmd = new SqlCommand(checkQuery, conn);
-                cmd.Parameters.AddWithValue("@UserId", cbUser.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@RoleId", cbRole.SelectedValue);
+                cmd.Parameters.AddWithValue("@IdStudent", cbUser.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@IdRole", cbRole.SelectedValue);
                 int count = (int)cmd.ExecuteScalar();
-                
+
                 if (count > 0)
                 {
                     MessageBox.Show("Người dùng đã được gán vai trò này!");
@@ -150,12 +195,13 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
                     return;
                 }
 
-                // Tiến hành phân quyền cho người dùng
-                string query = "INSERT INTO UserRole (UserId, RoleId) VALUES (@UserId, @RoleId)";
+                // Tiến hành phân quyền cho người dùng với Id được nhập
+                string query = "INSERT INTO UserRole (Id, IdStudent, IdRole) VALUES (@Id, @IdStudent, @IdRole)";
                 cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserId", cbUser.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@RoleId", cbRole.SelectedValue);
-                
+                cmd.Parameters.AddWithValue("@Id", id);
+                cmd.Parameters.AddWithValue("@IdStudent", cbUser.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@IdRole", cbRole.SelectedValue);
+
                 int result = cmd.ExecuteNonQuery();
                 if (result > 0)
                 {
@@ -186,20 +232,22 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
                 }
 
                 // Hiển thị hộp thoại xác nhận xóa
-                MessageBoxResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa vai trò này khỏi người dùng?", 
+                MessageBoxResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa vai trò này khỏi người dùng?",
                     "Xác nhận xóa", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                
+
                 if (result == MessageBoxResult.Yes)
                 {
                     DataRowView row = (DataRowView)dgUserRoles.SelectedItem;
-                    int userRoleId = Convert.ToInt32(row["Id"]);
-                    
+                    string idStudent = row["IdStudent"].ToString();
+                    string idRole = row["IdRole"].ToString();
+
                     conn = new SqlConnection(connStr);
                     conn.Open();
-                    string query = "DELETE FROM UserRole WHERE Id = @Id";
+                    string query = "DELETE FROM UserRole WHERE IdStudent = @IdStudent AND IdRole = @IdRole";
                     cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Id", userRoleId);
-                    
+                    cmd.Parameters.AddWithValue("@IdStudent", idStudent);
+                    cmd.Parameters.AddWithValue("@IdRole", idRole);
+
                     int deleteResult = cmd.ExecuteNonQuery();
                     if (deleteResult > 0)
                     {
@@ -220,8 +268,29 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
             }
         }
 
+        private void GenerateNextId()
+        {
+            try
+            {
+                conn = new SqlConnection(connStr);
+                conn.Open();
+                string query = "SELECT ISNULL(MAX(Id), 0) + 1 FROM UserRole";
+                cmd = new SqlCommand(query, conn);
+                object result = cmd.ExecuteScalar();
+                int nextId = Convert.ToInt32(result);
+                txtId.Text = nextId.ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tạo ID: " + ex.Message);
+            }
+        }
+
+
         private void ClearSelections()
         {
+            txtId.Text = "";
             cbUser.SelectedIndex = -1;
             cbRole.SelectedIndex = -1;
             dgUserRoles.SelectedItem = null;

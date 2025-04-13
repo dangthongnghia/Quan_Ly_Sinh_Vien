@@ -8,7 +8,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Models
 {
     class Student
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public DateTime BOF { get; set; }
 

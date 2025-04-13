@@ -32,11 +32,24 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="Tên đăng nhập:" Margin="5"/>
-            <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtUsername" Margin="5" Padding="3"/>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Mã sinh viên:" Margin="5"/>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" x:Name="txtIdStudent" Margin="5,5,2,5" Padding="3"/>
+                <Button Grid.Column="1" x:Name="btnFindStudent" Content="Tìm" Margin="2,5,5,5"/>
+            </Grid>
 
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Mật khẩu:" Margin="5"/>
-            <PasswordBox Grid.Row="1" Grid.Column="1" x:Name="txtPassword" Margin="5" Padding="3"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Tên sinh viên:" Margin="5"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtStudentName" Margin="5" Padding="3" IsEnabled="False"/>
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Tên đăng nhập:" Margin="5"/>
+            <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtUsername" Margin="5" Padding="3"/>
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Mật khẩu:" Margin="5"/>
+            <PasswordBox Grid.Row="3" Grid.Column="1" x:Name="txtPassword" Margin="5" Padding="3"/>
 
             <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" 
                         Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,5">
@@ -55,9 +68,9 @@
         <DataGrid Grid.Row="2" x:Name="dgUsers" AutoGenerateColumns="False" 
                   IsReadOnly="True" AlternatingRowBackground="#F5F5F5">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Tên đăng nhập" Binding="{Binding Username}" Width="120"/>
-                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*"/>
-                <DataGridCheckBoxColumn Header="Trạng thái" Binding="{Binding IsActive}" Width="80"/>
+                <DataGridTextColumn Header="Id sinh viên" Binding="{Binding IdStudent}" Width="120"/>
+                <DataGridTextColumn Header="Tên đăng nhập" Binding="{Binding Username}" Width="*"/>
+                <DataGridCheckBoxColumn Header="Trạng thái" Binding="{Binding Status}" Width="80"/>
                 <DataGridTemplateColumn Header="Thao tác" Width="100">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

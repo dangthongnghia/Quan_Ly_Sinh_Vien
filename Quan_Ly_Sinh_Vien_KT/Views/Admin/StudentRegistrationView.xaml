@@ -16,13 +16,13 @@
                    HorizontalAlignment="Center"/>
 
         <DataGrid Grid.Row="1" x:Name="dgRegistrations" AutoGenerateColumns="False" 
-                  IsReadOnly="True" AlternatingRowBackground="#F5F5F5" Margin="10">
+          IsReadOnly="True" AlternatingRowBackground="#F5F5F5" Margin="10">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã Sinh Viên" Binding="{Binding StudentId}" Width="150"/>
-                <DataGridTextColumn Header="Họ và Tên" Binding="{Binding StudentName}" Width="200"/>
-                <DataGridTextColumn Header="Mã Môn Học" Binding="{Binding SubjectId}" Width="150"/>
-                <DataGridTextColumn Header="Tên Môn Học" Binding="{Binding SubjectName}" Width="*"/>
-                <DataGridTextColumn Header="Ngày Đăng Ký" Binding="{Binding RegistrationDate, StringFormat=dd/MM/yyyy}" Width="150"/>
+                <DataGridTextColumn Header="Mã Sinh Viên" Binding="{Binding IdStudent}" Width="150"/>
+                <DataGridTextColumn Header="Họ và Tên" Binding="{Binding Name}" Width="200"/>
+                <DataGridTextColumn Header="Mã Môn Học" Binding="{Binding IdSubject}" Width="150"/>
+                <DataGridTextColumn Header="Tên Môn Học" Binding="{Binding Name}" Width="200"/>
+                <DataGridTextColumn Header="Điểm" Binding="{Binding Mark}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

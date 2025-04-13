@@ -28,17 +28,25 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="Người dùng:" Margin="5"/>
-            <ComboBox Grid.Row="0" Grid.Column="1" x:Name="cbUser" Margin="5" 
+            <!-- Thêm ô nhập ID -->
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="ID:" Margin="5"/>
+            <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtId" Margin="5" Padding="3" 
+                     IsEnabled="False"/>
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Người dùng:" Margin="5"/>
+            <ComboBox Grid.Row="1" Grid.Column="1" x:Name="cbUser" Margin="5" 
                       DisplayMemberPath="Username"/>
 
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Vai trò:" Margin="5"/>
-            <ComboBox Grid.Row="1" Grid.Column="1" x:Name="cbRole" Margin="5" 
-                      DisplayMemberPath="RoleName"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Vai trò:" Margin="5"/>
+            <ComboBox Grid.Row="2" Grid.Column="1" x:Name="cbRole" Margin="5" 
+                      DisplayMemberPath="RoleName">
 
-            <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
+            </ComboBox>
+
+            <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" 
                         Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,5">
                 <Button x:Name="btnAssignRole" Content="Phân quyền" Width="120" Height="30" Margin="5"
                         Background="#2196F3" Foreground="White"/>
@@ -49,17 +57,11 @@
 
         <!-- Data grid for displaying user roles -->
         <DataGrid Grid.Row="2" x:Name="dgUserRoles" AutoGenerateColumns="False" 
-                  IsReadOnly="True" AlternatingRowBackground="#F5F5F5">
+          IsReadOnly="True" AlternatingRowBackground="#F5F5F5">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Người dùng" Binding="{Binding Username}" Width="*"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="Người dùng" Binding="{Binding StudentName}" Width="*"/>
                 <DataGridTextColumn Header="Vai trò" Binding="{Binding RoleName}" Width="*"/>
-                <DataGridTemplateColumn Header="Thao tác" Width="80">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Button Content="Xóa" Margin="2" Padding="5,0"/>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
