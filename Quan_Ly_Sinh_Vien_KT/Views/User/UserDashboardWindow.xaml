@@ -4,60 +4,204 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Quan_Ly_Sinh_Vien_KT"
+        xmlns:local="clr-namespace:Quan_Ly_Sinh_Vien_KT.Views.User"
         mc:Ignorable="d"
-        Title="Hệ thống Sinh viên" Height="600" Width="900" WindowStartupLocation="CenterScreen">
+        Title="Hệ thống Quản lý Sinh viên" Height="700" Width="1100" 
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+    <Window.Resources>
+        <!-- Style cho nút điều hướng -->
+        <Style x:Key="NavButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Padding" Value="15,0,0,0"/>
+            <Setter Property="Margin" Value="0,2"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#286090"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#1F4E79"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style cho nút được chọn -->
+        <Style x:Key="NavButtonActiveStyle" TargetType="Button" BasedOn="{StaticResource NavButtonStyle}">
+            <Setter Property="Background" Value="#286090"/>
+            <Setter Property="BorderThickness" Value="4,0,0,0"/>
+            <Setter Property="BorderBrush" Value="#2ECC71"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="240"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <DockPanel>
-            <!-- Left Navigation Panel -->
-        <Border Grid.Column="0" Background="#3498DB">
-            <StackPanel>
-                <TextBlock Text="SINH VIÊN" Foreground="White" 
-                           FontWeight="Bold" FontSize="18" Margin="15,20" 
-                           TextAlignment="Center"/>
 
-                <Separator Background="#2980B9" Margin="10,0"/>
+        <!-- Thanh sidebar bên trái -->
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-                <TextBlock x:Name="lblStudentName" Text="Xin chào, Sinh viên" Foreground="White" 
-                           Margin="15,10" TextAlignment="Center"/>
+            <!-- Header với logo và tên trường -->
+            <Border Grid.Row="0" Background="#2471A3" Height="160">
+                <StackPanel VerticalAlignment="Center">
+                    <Ellipse Width="70" Height="70" Margin="0,10">
+                        <Ellipse.Fill>
+                            <SolidColorBrush Color="#1ABC9C"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBlock Text="TRƯỜNG ĐẠI HỌC" 
+                               Foreground="White" FontWeight="SemiBold"
+                               HorizontalAlignment="Center"/>
+                    <TextBlock Text="QUẢN LÝ SINH VIÊN" 
+                               Foreground="White" FontWeight="Bold" FontSize="16"
+                               HorizontalAlignment="Center" Margin="0,5,0,10"/>
+                </StackPanel>
+            </Border>
 
-                <Separator Background="#2980B9" Margin="10,10"/>
+            <!-- Menu điều hướng -->
+            <Border Grid.Row="1" Background="#3498DB">
+                <StackPanel Margin="0,20,0,0">
+                    <!-- Thông tin sinh viên -->
+                    <Border Background="#2980B9" Padding="15,10" Margin="0,0,0,15">
+                        <StackPanel>
+                            <TextBlock Text="Xin chào," Foreground="#BBDEFB" FontSize="12"/>
+                            <TextBlock x:Name="lblStudentName" Text="Nguyễn Văn A" 
+                                       Foreground="White" FontWeight="SemiBold" FontSize="15"/>
+                            <TextBlock x:Name="lblStudentId" Text="Mã SV: SV001" 
+                                       Foreground="#BBDEFB" FontSize="12" Margin="0,5,0,0"/>
+                        </StackPanel>
+                    </Border>
 
-                <!-- Navigation Menu -->
-                <Button x:Name="btnProfile" Content="Thông tin cá nhân" 
-                        Style="{StaticResource {x:Type Button}}"
-                        Height="40" Margin="10,5" Background="Transparent" 
-                        BorderThickness="0" Foreground="White"
-                        HorizontalContentAlignment="Left" Padding="10,0" Click="btnProfile_Click"/>
+                    <!-- Các mục menu -->
+                    <TextBlock Text="MENU CHÍNH" Foreground="#BBDEFB" 
+                               Margin="15,5" FontSize="11" FontWeight="SemiBold"/>
 
-                <Button x:Name="btnRegisterSubjects" Content="Đăng ký môn học" 
-                        Style="{StaticResource {x:Type Button}}"
-                        Height="40" Margin="10,5" Background="Transparent" 
-                        BorderThickness="0" Foreground="White"
-                        HorizontalContentAlignment="Left" Padding="10,0" Click="btnRegisterSubjects_Click"/>
+                    <Button x:Name="btnProfile" Style="{StaticResource NavButtonStyle}"
+                            Click="btnProfile_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xE77B;" FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="16" Margin="0,0,10,0"/>
+                            <TextBlock Text="Thông tin cá nhân"/>
+                        </StackPanel>
+                    </Button>
 
-                <Button x:Name="btnMySubjects" Content="Môn học đã đăng ký" 
-                        Style="{StaticResource {x:Type Button}}"
-                        Height="40" Margin="10,5" Background="Transparent" 
-                        BorderThickness="0" Foreground="White"
-                        HorizontalContentAlignment="Left" Padding="10,0" Click="btnMySubjects_Click"/>
+                    <Button x:Name="btnRegisterSubjects" Style="{StaticResource NavButtonStyle}"
+                            Click="btnRegisterSubjects_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xE735;" FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="16" Margin="0,0,10,0"/>
+                            <TextBlock Text="Đăng ký môn học"/>
+                        </StackPanel>
+                    </Button>
 
-                <Separator Background="#2980B9" Margin="10,10"/>
+                    <Button x:Name="btnMySubjects" Style="{StaticResource NavButtonStyle}"
+                            Click="btnMySubjects_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xE82D;" FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="16" Margin="0,0,10,0"/>
+                            <TextBlock Text="Môn học đã đăng ký"/>
+                        </StackPanel>
+                    </Button>
 
-                <Button x:Name="btnLogout" Content="Đăng xuất" 
-                        Style="{StaticResource {x:Type Button}}"
-                        Height="40" Margin="10,5" Background="#E74C3C" 
-                        BorderThickness="0" Foreground="White"
-                        HorizontalContentAlignment="Center"/>
-            </StackPanel>
-        </Border>
+                    <Button x:Name="btnSchedule" Style="{StaticResource NavButtonStyle}"
+                            Click="btnSchedule_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xE787;" FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="16" Margin="0,0,10,0"/>
+                            <TextBlock Text="Lịch học"/>
+                        </StackPanel>
+                    </Button>
 
-        <!-- Content Area -->
-        <ContentControl Grid.Column="1" x:Name="contentControl" Margin="10"/>
-        </DockPanel>
+                    <Button x:Name="btnGrades" Style="{StaticResource NavButtonStyle}"
+                            Click="btnGrades_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="&#xE8EC;" FontFamily="Segoe MDL2 Assets" 
+                                       FontSize="16" Margin="0,0,10,0"/>
+                            <TextBlock Text="Điểm số"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Border>
+
+            <!-- Footer với nút đăng xuất -->
+            <Border Grid.Row="2" Background="#3498DB">
+                <Button x:Name="btnLogout" Height="45" Margin="15,10"
+                        Background="#E74C3C" Foreground="White"
+                        BorderThickness="0" Click="btnLogout_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="4"/>
+                        </Style>
+                    </Button.Resources>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="&#xE7E8;" FontFamily="Segoe MDL2 Assets" 
+                                   FontSize="16" Margin="0,0,10,0"/>
+                        <TextBlock Text="Đăng xuất"/>
+                    </StackPanel>
+                </Button>
+            </Border>
+        </Grid>
+
+        <!-- Khu vực nội dung bên phải -->
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Header nội dung -->
+            <Border Grid.Row="0" Background="White" Height="60" 
+                    BorderThickness="0,0,0,1" BorderBrush="#E0E0E0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Tiêu đề trang hiện tại -->
+                    <TextBlock x:Name="txtPageTitle" Text="Tổng quan" 
+                               FontSize="18" FontWeight="SemiBold" VerticalAlignment="Center"
+                               Margin="20,0,0,0"/>
+
+                    <!-- Ngày giờ hiện tại -->
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="0,0,20,0">
+                        <TextBlock x:Name="txtCurrentDate" Text="17/04/2023" 
+                                   VerticalAlignment="Center" Foreground="#757575"/>
+                        <TextBlock Text=" | " Foreground="#BDBDBD" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="txtCurrentTime" Text="10:25 AM" 
+                                   VerticalAlignment="Center" Foreground="#757575"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- Vùng nội dung chính -->
+            <Border Grid.Row="1" Background="White" Margin="15" CornerRadius="5">
+                <ContentControl x:Name="contentControl" Margin="15"/>
+            </Border>
+        </Grid>
     </Grid>
 </Window>

@@ -1,19 +1,13 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Configuration;
 using Microsoft.Data.SqlClient;
-using Quan_Ly_Sinh_Vien_KT.Models;
+using System.Data;
 using Quan_Ly_Sinh_Vien_KT.Views.Admin;
-namespace Quan_Ly_Sinh_Vien_KT;
+using Quan_Ly_Sinh_Vien_KT.Views.User;
 
+namespace Quan_Ly_Sinh_Vien_KT;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
@@ -36,7 +30,7 @@ public partial class MainWindow : Window
         string password = txtPassword.Password;
         if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
         {
-            MessageBox.Show("Please enter username and password.");
+            MessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu.");
             return;
         }
 
@@ -49,6 +43,7 @@ public partial class MainWindow : Window
             // Clear any existing parameters before adding new ones
             cmd.Parameters.Clear();
 
+            // Kiểm tra thông tin đăng nhập
             cmd.CommandText = "SELECT * FROM [User] WHERE Username = @username AND Password = @password";
             cmd.Parameters.AddWithValue("@username", username);
             cmd.Parameters.AddWithValue("@password", password);
@@ -57,48 +52,60 @@ public partial class MainWindow : Window
             if (reader.HasRows)
             {
                 reader.Read();
-                string role = reader.GetString(0); // Assuming role is at position 2
+                // Lưu thông tin người dùng để sử dụng sau này
+                string idStudent = reader["IdStudent"].ToString();
+                reader.Close();
 
-                switch (role.ToLower())
+                // Kiểm tra vai trò của người dùng - SỬA CHỖ NÀY
+                cmd.CommandText = @"SELECT r.Id, r.Name 
+              FROM UserRole ur 
+              INNER JOIN Role r ON ur.IdRole = r.Id 
+              WHERE ur.IdStudent = @idStudent";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idStudent", idStudent);  // Sử dụng IdStudent thay vì username
+
+                List<string> roles = new List<string>();
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
                 {
-                    case "admin":
-                        AdminMainWindow adminView = new AdminMainWindow();
-                        adminView.Show();
-                        this.Close();
-                        break;
+                    roles.Add(reader["Name"].ToString().ToLower());
+                }
+                reader.Close();
 
-                    case "user":
-                    case "student":
-                        // Redirect to the user dashboard
-                        Views.User.UserDashboardWindow userDashboard = new Views.User.UserDashboardWindow();
-                        userDashboard.Show();
-                        this.Close();
-                        break;
-
-                    case "2308005":
-                        // Define behavior for role '2308005'
-                        MessageBox.Show("Welcome, user with role 2308005!");
-                        AdminMainWindow adminView2308005 = new AdminMainWindow();
-                        adminView2308005.Show();
-                        this.Close();
-                        break;
-
-                    default:
-                        MessageBox.Show($"Role '{role}' does not have permission to access this application.");
-                        break;
+                // Nếu người dùng không có vai trò nào được gán
+                if (roles.Count == 0)
+                {
+                    // Mặc định là vai trò user/student
+                    UserDashboardWindow userDashboard = new UserDashboardWindow(username);
+                    userDashboard.Show();
+                    this.Close();
+                }
+                else if (roles.Contains("admin"))
+                {
+                    // Người dùng có vai trò admin
+                    AdminMainWindow adminView = new AdminMainWindow();
+                    adminView.Show();
+                    this.Close();
+                }
+                else
+                {
+                    // Người dùng là sinh viên
+                    UserDashboardWindow userDashboard = new UserDashboardWindow(username);
+                    userDashboard.Show();
+                    this.Close();
                 }
             }
             else
             {
-                MessageBox.Show("Invalid username or password.");
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không hợp lệ.");
+                reader.Close();
             }
-            reader.Close();
             conn.Close();
         }
         catch (Exception ex)
         {
-            MessageBox.Show("Error: " + ex.Message);
-            if (conn != null && conn.State == System.Data.ConnectionState.Open)
+            MessageBox.Show("Lỗi: " + ex.Message);
+            if (conn != null && conn.State == ConnectionState.Open)
                 conn.Close();
         }
     }
@@ -106,7 +113,5 @@ public partial class MainWindow : Window
     private void btnExit_Click(object sender, RoutedEventArgs e)
     {
         Application.Current.Shutdown();
-
-
     }
 }

@@ -15,15 +15,27 @@
                    FontSize="20" FontWeight="Bold" Margin="0,10,0,20" 
                    HorizontalAlignment="Center"/>
 
-        <DataGrid Grid.Row="1" x:Name="dgRegistrations" AutoGenerateColumns="False" 
-          IsReadOnly="True" AlternatingRowBackground="#F5F5F5" Margin="10">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã Sinh Viên" Binding="{Binding IdStudent}" Width="150"/>
-                <DataGridTextColumn Header="Họ và Tên" Binding="{Binding Name}" Width="200"/>
-                <DataGridTextColumn Header="Mã Môn Học" Binding="{Binding IdSubject}" Width="150"/>
-                <DataGridTextColumn Header="Tên Môn Học" Binding="{Binding Name}" Width="200"/>
-                <DataGridTextColumn Header="Điểm" Binding="{Binding Mark}" Width="*"/>
-            </DataGrid.Columns>
-        </DataGrid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="📋 Danh sách đăng ký môn học" FontSize="18" FontWeight="Bold" 
+                       Foreground="#263238" HorizontalAlignment="Left" Margin="0,0,0,10"/>
+            <DataGrid x:Name="dgRegistrations" Grid.Row="1" AutoGenerateColumns="False" 
+                      Background="WhiteSmoke" 
+                      BorderThickness="1" BorderBrush="#CFD8DC"
+                      AlternatingRowBackground="#ECEFF1"
+                      HeadersVisibility="Column"
+                      ItemsSource="{Binding Enrolments}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Mã SV" Binding="{Binding IdStudent}" Width="100"/>
+                    <DataGridTextColumn Header="Tên SV" Binding="{Binding StudentName}" Width="200"/>
+                    <DataGridTextColumn Header="Mã môn học" Binding="{Binding IdSubject}" Width="150"/>
+                    <DataGridTextColumn Header="Tên môn học" Binding="{Binding SubjectName}" Width="250"/>
+                    <DataGridTextColumn Header="Điểm" Binding="{Binding Mark}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
     </Grid>
 </UserControl>

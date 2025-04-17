@@ -55,16 +55,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Mã vai trò" Binding="{Binding Id}" Width="120"/>
                 <DataGridTextColumn Header="Tên vai trò" Binding="{Binding Name}" Width="*"/>
-                <DataGridTemplateColumn Header="Thao tác" Width="100">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Button Content="Sửa" Margin="2" Padding="5,0"/>
-                                <Button Content="Xóa" Margin="2" Padding="5,0"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
+                
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

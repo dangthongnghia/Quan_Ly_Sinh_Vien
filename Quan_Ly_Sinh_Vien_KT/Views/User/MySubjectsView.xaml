@@ -1,10 +1,9 @@
-﻿<!-- MySubjectsView.xaml -->
-<Window x:Class="Quan_Ly_Sinh_Vien_KT.Views.User.MySubjectsView"
+﻿<UserControl x:Class="Quan_Ly_Sinh_Vien_KT.Views.User.MySubjectsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Quan_Ly_Sinh_Vien_KT"
+             xmlns:local="clr-namespace:Quan_Ly_Sinh_Vien_KT.Views.User"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="700">
     <Grid>
@@ -50,21 +49,15 @@
 
         <!-- Data grid for displaying registered subjects -->
         <DataGrid Grid.Row="2" x:Name="dgRegisteredSubjects" AutoGenerateColumns="False" 
-                  IsReadOnly="True" AlternatingRowBackground="#F5F5F5">
+                  IsReadOnly="True" AlternatingRowBackground="#F5F5F5"
+                  HeadersVisibility="Column" GridLinesVisibility="Horizontal">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã môn học" Binding="{Binding SubjectId}" Width="100"/>
-                <DataGridTextColumn Header="Tên môn học" Binding="{Binding SubjectName}" Width="*"/>
-                <DataGridTextColumn Header="Số tín chỉ" Binding="{Binding Credits}" Width="100"/>
+                <DataGridTextColumn Header="Mã môn học" Binding="{Binding Id}" Width="100"/>
+                <DataGridTextColumn Header="Tên môn học" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Điểm" Binding="{Binding Mark}" Width="80"/>
                 <DataGridTextColumn Header="Ngày đăng ký" Binding="{Binding RegistrationDate, StringFormat=dd/MM/yyyy}" Width="120"/>
-                <DataGridTemplateColumn Header="Hủy" Width="80">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Button Content="Hủy" Background="#F44336" Foreground="White"
-                                    Margin="2" Padding="5,0"/>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
+                <!-- Cột nút hủy sẽ được thêm vào bằng code C# -->
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
-</Window>
+</UserControl>

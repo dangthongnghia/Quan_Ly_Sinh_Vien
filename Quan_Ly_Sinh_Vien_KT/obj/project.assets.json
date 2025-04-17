@@ -47,187 +47,6 @@
           }
         }
       },
-      "DevExpress.Data/24.2.6": {
-        "type": "package",
-        "dependencies": {
-          "System.Drawing.Common": "4.7.2"
-        },
-        "compile": {
-          "lib/net8.0/DevExpress.Data.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.Data.v24.2.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DevExpress.Data.Desktop/24.2.6": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.6]",
-          "DevExpress.Drawing": "[24.2.6]",
-          "System.Data.OleDb": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0-windows/DevExpress.Data.Desktop.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows/DevExpress.Data.Desktop.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/net8.0-windows/DevExpress.Data.Desktop.props": {}
-        }
-      },
-      "DevExpress.Drawing/24.2.6": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.6]",
-          "System.Drawing.Common": "4.7.2"
-        },
-        "compile": {
-          "lib/net8.0/DevExpress.Drawing.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.Drawing.v24.2.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DevExpress.Mvvm/24.2.6": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0-windows/DevExpress.Mvvm.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows/DevExpress.Mvvm.v24.2.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DevExpress.Pdf.Core/24.2.6": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.6]",
-          "DevExpress.Drawing": "[24.2.6]",
-          "System.Drawing.Common": "4.7.2",
-          "System.Security.Cryptography.Pkcs": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0/DevExpress.Pdf.v24.2.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.Pdf.v24.2.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DevExpress.Pdf.Drawing/24.2.6": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.6]",
-          "DevExpress.Drawing": "[24.2.6]",
-          "DevExpress.Pdf.Core": "[24.2.6]",
-          "System.Drawing.Common": "4.7.2"
-        },
-        "compile": {
-          "lib/net8.0/DevExpress.Pdf.v24.2.Drawing.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.Pdf.v24.2.Drawing.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DevExpress.Printing.Core/24.2.6": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.6]",
-          "DevExpress.Drawing": "[24.2.6]",
-          "DevExpress.Pdf.Core": "[24.2.6]",
-          "DevExpress.Pdf.Drawing": "[24.2.6]",
-          "System.Drawing.Common": "4.7.2",
-          "System.Security.Cryptography.Pkcs": "8.0.1",
-          "System.ServiceModel.Http": "6.2.0"
-        },
-        "compile": {
-          "lib/net8.0/DevExpress.Printing.v24.2.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/DevExpress.Printing.v24.2.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DevExpress.Wpf.Controls/24.2.6": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.6]",
-          "DevExpress.Data.Desktop": "[24.2.6]",
-          "DevExpress.Mvvm": "[24.2.6]",
-          "DevExpress.Printing.Core": "[24.2.6]",
-          "DevExpress.Wpf.Core": "[24.2.6]"
-        },
-        "compile": {
-          "lib/net8.0-windows/DevExpress.Xpf.Controls.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows/DevExpress.Xpf.Controls.v24.2.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "DevExpress.Wpf.Core/24.2.6": {
-        "type": "package",
-        "dependencies": {
-          "DevExpress.Data": "[24.2.6]",
-          "DevExpress.Data.Desktop": "[24.2.6]",
-          "DevExpress.Drawing": "[24.2.6]",
-          "DevExpress.Mvvm": "[24.2.6]",
-          "DevExpress.Pdf.Core": "[24.2.6]",
-          "DevExpress.Printing.Core": "[24.2.6]",
-          "DevExpress.Wpf.Themes.Office2019Colorful": "[24.2.6]"
-        },
-        "compile": {
-          "lib/net8.0-windows/DevExpress.Xpf.Core.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0-windows/DevExpress.Xpf.Core.v24.2.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/net8.0-windows/DevExpress.Wpf.Core.props": {}
-        }
-      },
-      "DevExpress.Wpf.Themes.Office2019Colorful/24.2.6": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0-windows/DevExpress.Xpf.Themes.Office2019Colorful.v24.2.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0-windows/DevExpress.Xpf.Themes.Office2019Colorful.v24.2.dll": {}
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -424,19 +243,6 @@
           "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
         }
       },
-      "Microsoft.Extensions.ObjectPool/6.0.16": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Microsoft.Extensions.ObjectPool.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.ObjectPool.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.Extensions.Options/8.0.2": {
         "type": "package",
         "dependencies": {
@@ -601,15 +407,6 @@
           }
         }
       },
-      "Microsoft.NETCore.Platforms/3.1.4": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
       "Microsoft.SqlServer.Server/1.0.0": {
         "type": "package",
         "compile": {
@@ -620,28 +417,6 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
             "related": ".pdb;.xml"
-          }
-        }
-      },
-      "Microsoft.Win32.SystemEvents/4.7.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/_._": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
-            "assetType": "runtime",
-            "rid": "win"
           }
         }
       },
@@ -669,7 +444,7 @@
           "System.Security.Cryptography.ProtectedData": "8.0.0"
         },
         "compile": {
-          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
+          "lib/net8.0/_._": {
             "related": ".xml"
           }
         },
@@ -680,32 +455,6 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Data.OleDb/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Configuration.ConfigurationManager": "8.0.1",
-          "System.Diagnostics.PerformanceCounter": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0/System.Data.OleDb.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/System.Data.OleDb.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net8.0/System.Data.OleDb.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
         }
       },
       "System.Diagnostics.DiagnosticSource/6.0.1": {
@@ -730,7 +479,7 @@
       "System.Diagnostics.EventLog/8.0.1": {
         "type": "package",
         "compile": {
-          "lib/net8.0/System.Diagnostics.EventLog.dll": {
+          "lib/net8.0/_._": {
             "related": ".xml"
           }
         },
@@ -748,56 +497,6 @@
             "rid": "win"
           },
           "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Diagnostics.PerformanceCounter/8.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Configuration.ConfigurationManager": "8.0.1"
-        },
-        "compile": {
-          "lib/net8.0/System.Diagnostics.PerformanceCounter.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/System.Diagnostics.PerformanceCounter.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net8.0/System.Diagnostics.PerformanceCounter.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Drawing.Common/4.7.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.1.4",
-          "Microsoft.Win32.SystemEvents": "4.7.0"
-        },
-        "compile": {
-          "ref/netcoreapp3.0/System.Drawing.Common.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Drawing.Common.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -871,28 +570,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Security.AccessControl/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/System.Security.AccessControl.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.Security.AccessControl.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net6.0/System.Security.AccessControl.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "System.Security.Cryptography.Pkcs/8.0.1": {
         "type": "package",
         "compile": {
@@ -929,139 +606,6 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Security.Cryptography.Xml/6.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.AccessControl": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "6.0.1"
-        },
-        "compile": {
-          "lib/net6.0/System.Security.Cryptography.Xml.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.Security.Cryptography.Xml.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
-      "System.ServiceModel.Http/6.2.0": {
-        "type": "package",
-        "dependencies": {
-          "System.ServiceModel.Primitives": "6.2.0"
-        },
-        "compile": {
-          "lib/net6.0/System.ServiceModel.Http.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.ServiceModel.Http.dll": {
-            "related": ".pdb"
-          }
-        },
-        "resource": {
-          "lib/net6.0/cs/System.ServiceModel.Http.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net6.0/de/System.ServiceModel.Http.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net6.0/es/System.ServiceModel.Http.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net6.0/fr/System.ServiceModel.Http.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net6.0/it/System.ServiceModel.Http.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net6.0/ja/System.ServiceModel.Http.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net6.0/ko/System.ServiceModel.Http.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net6.0/pl/System.ServiceModel.Http.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net6.0/pt-BR/System.ServiceModel.Http.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net6.0/ru/System.ServiceModel.Http.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net6.0/tr/System.ServiceModel.Http.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net6.0/zh-Hans/System.ServiceModel.Http.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net6.0/zh-Hant/System.ServiceModel.Http.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "System.ServiceModel.Primitives/6.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.ObjectPool": "6.0.16",
-          "System.Security.Cryptography.Xml": "6.0.1"
-        },
-        "compile": {
-          "ref/net6.0/System.ServiceModel.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/System.ServiceModel.Primitives.dll": {
-            "related": ".pdb"
-          }
-        },
-        "resource": {
-          "lib/net6.0/cs/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "cs"
-          },
-          "lib/net6.0/de/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net6.0/es/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net6.0/fr/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net6.0/it/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net6.0/ja/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net6.0/ko/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net6.0/pl/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "pl"
-          },
-          "lib/net6.0/pt-BR/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net6.0/ru/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net6.0/tr/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "tr"
-          },
-          "lib/net6.0/zh-Hans/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net6.0/zh-Hant/System.ServiceModel.Primitives.resources.dll": {
-            "locale": "zh-Hant"
-          }
         }
       },
       "System.Text.Encodings.Web/4.7.2": {
@@ -1138,184 +682,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
-      ]
-    },
-    "DevExpress.Data/24.2.6": {
-      "sha512": "qjxEDTdE8fYjWK5ErBuYusKlnvwV8fFZuH/DIq+BQdNVeTJ0XwobYKjfDzYD9pgixbmPU7NsPr1aFFnMm9yMNg==",
-      "type": "package",
-      "path": "devexpress.data/24.2.6",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "analyzers/dotnet/cs/DevExpress.Generator.dll",
-        "devexpress.data.24.2.6.nupkg.sha512",
-        "devexpress.data.nuspec",
-        "lib/net462/DevExpress.Data.v24.2.dll",
-        "lib/net462/DevExpress.Data.v24.2.xml",
-        "lib/net8.0/DevExpress.Data.v24.2.dll",
-        "lib/net8.0/DevExpress.Data.v24.2.xml",
-        "tools/VisualStudioToolsManifest.xml"
-      ]
-    },
-    "DevExpress.Data.Desktop/24.2.6": {
-      "sha512": "u/VR2ZRlh6NFlrVgN2GPiOf6uxV38A7cP0p5gr2QwI4vMLcU4v1YigueCr6Kxc5Alpf1HIihVEsAofewWn+2Fg==",
-      "type": "package",
-      "path": "devexpress.data.desktop/24.2.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net8.0-windows/DevExpress.Data.Desktop.props",
-        "devexpress.data.desktop.24.2.6.nupkg.sha512",
-        "devexpress.data.desktop.nuspec",
-        "lib/net462/DevExpress.Data.Desktop.v24.2.dll",
-        "lib/net462/DevExpress.Data.Desktop.v24.2.xml",
-        "lib/net8.0-windows/DevExpress.Data.Desktop.v24.2.dll",
-        "lib/net8.0-windows/DevExpress.Data.Desktop.v24.2.xml"
-      ]
-    },
-    "DevExpress.Drawing/24.2.6": {
-      "sha512": "xjSLPqm2t3neKqgbwiyKnrrsTaYfKDvgbL627Yrqe5y1NNuajKlVBHuPqK8+SfXPzchms8grSGsZIsj6YXZFvA==",
-      "type": "package",
-      "path": "devexpress.drawing/24.2.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.drawing.24.2.6.nupkg.sha512",
-        "devexpress.drawing.nuspec",
-        "lib/net462/DevExpress.Drawing.v24.2.dll",
-        "lib/net462/DevExpress.Drawing.v24.2.xml",
-        "lib/net8.0/DevExpress.Drawing.v24.2.dll",
-        "lib/net8.0/DevExpress.Drawing.v24.2.xml"
-      ]
-    },
-    "DevExpress.Mvvm/24.2.6": {
-      "sha512": "BLujeJ6IZGnOEeW0CLPmuIAs1sx6iwOUK++81nBsi+lqrRLZYuEl9NxdJ3sysqNaJQW/FEjaaIvVuLcT6R85zw==",
-      "type": "package",
-      "path": "devexpress.mvvm/24.2.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.mvvm.24.2.6.nupkg.sha512",
-        "devexpress.mvvm.nuspec",
-        "lib/net462/DevExpress.Mvvm.v24.2.dll",
-        "lib/net462/DevExpress.Mvvm.v24.2.xml",
-        "lib/net8.0-windows/DevExpress.Mvvm.v24.2.dll",
-        "lib/net8.0-windows/DevExpress.Mvvm.v24.2.xml"
-      ]
-    },
-    "DevExpress.Pdf.Core/24.2.6": {
-      "sha512": "iLXyB4qjIX66gFV3mT1KhyWIaiSaH0Pj3p0EgRwqaD+SLQtsb+091dSKuJlXv5GRfxayQwpISb4ze5oOJq+k0g==",
-      "type": "package",
-      "path": "devexpress.pdf.core/24.2.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.pdf.core.24.2.6.nupkg.sha512",
-        "devexpress.pdf.core.nuspec",
-        "lib/net462/DevExpress.Pdf.v24.2.Core.dll",
-        "lib/net462/DevExpress.Pdf.v24.2.Core.xml",
-        "lib/net8.0/DevExpress.Pdf.v24.2.Core.dll",
-        "lib/net8.0/DevExpress.Pdf.v24.2.Core.xml"
-      ]
-    },
-    "DevExpress.Pdf.Drawing/24.2.6": {
-      "sha512": "MSuamTlkWIU7KnTzNggHICEpcooDZSmvqdMpqa+OaRlDcs1yQHkeyGISWtxnrPmFmaKI5PaAMJhnhgV2W//sHg==",
-      "type": "package",
-      "path": "devexpress.pdf.drawing/24.2.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.pdf.drawing.24.2.6.nupkg.sha512",
-        "devexpress.pdf.drawing.nuspec",
-        "lib/net462/DevExpress.Pdf.v24.2.Drawing.dll",
-        "lib/net462/DevExpress.Pdf.v24.2.Drawing.xml",
-        "lib/net8.0/DevExpress.Pdf.v24.2.Drawing.dll",
-        "lib/net8.0/DevExpress.Pdf.v24.2.Drawing.xml"
-      ]
-    },
-    "DevExpress.Printing.Core/24.2.6": {
-      "sha512": "CF+0e+6jWnSa3PotYEFD9aB8EkWtLFoPq0kH9Bx0qBvyvKUJRQbjk5nYNP4uguqVIFju2fMfOzwuyOEQRO00kA==",
-      "type": "package",
-      "path": "devexpress.printing.core/24.2.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.printing.core.24.2.6.nupkg.sha512",
-        "devexpress.printing.core.nuspec",
-        "lib/net462/DevExpress.Printing.v24.2.Core.dll",
-        "lib/net462/DevExpress.Printing.v24.2.Core.xml",
-        "lib/net8.0/DevExpress.Printing.v24.2.Core.dll",
-        "lib/net8.0/DevExpress.Printing.v24.2.Core.xml"
-      ]
-    },
-    "DevExpress.Wpf.Controls/24.2.6": {
-      "sha512": "Tt1gmum5Y6EDIab8+4FSMlorOyFssKdXAI7W9JzazY/uQTroiYUsNm3P1euhQe2jsxt3Pm2eCLpMl/aeI/940w==",
-      "type": "package",
-      "path": "devexpress.wpf.controls/24.2.6",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.wpf.controls.24.2.6.nupkg.sha512",
-        "devexpress.wpf.controls.nuspec",
-        "lib/net462/Design/DevExpress.Xpf.Controls.v24.2.Design.dll",
-        "lib/net462/Design/DevExpress.Xpf.Controls.v24.2.DesignTools.dll",
-        "lib/net462/DevExpress.Xpf.Controls.v24.2.dll",
-        "lib/net462/DevExpress.Xpf.Controls.v24.2.xml",
-        "lib/net8.0-windows/Design/DevExpress.Xpf.Controls.v24.2.DesignTools.dll",
-        "lib/net8.0-windows/DevExpress.Xpf.Controls.v24.2.dll",
-        "lib/net8.0-windows/DevExpress.Xpf.Controls.v24.2.xml",
-        "tools/VisualStudioToolsManifest.xml"
-      ]
-    },
-    "DevExpress.Wpf.Core/24.2.6": {
-      "sha512": "UXrKSC8T5ABpyklf80J86eGTBIT8/4gfCHHlt+5ljJ+aU4k4y/7tN+3DyFcimXNtpJ2lvUDx0pJ/VbW4weSwZg==",
-      "type": "package",
-      "path": "devexpress.wpf.core/24.2.6",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net8.0-windows/DevExpress.Wpf.Core.props",
-        "devexpress.wpf.core.24.2.6.nupkg.sha512",
-        "devexpress.wpf.core.nuspec",
-        "lib/net462/Design/DevExpress.Design.v24.2.dll",
-        "lib/net462/Design/DevExpress.Images.v24.2.dll",
-        "lib/net462/Design/DevExpress.Utils.v24.2.dll",
-        "lib/net462/Design/DevExpress.VisualStudioInterop.VS2019.v24.2.dll",
-        "lib/net462/Design/DevExpress.VisualStudioInterop.v24.2.Base.dll",
-        "lib/net462/Design/DevExpress.Xpf.Core.v24.2.Design.Wizards.dll",
-        "lib/net462/Design/DevExpress.Xpf.Core.v24.2.Design.dll",
-        "lib/net462/Design/DevExpress.Xpf.Core.v24.2.DesignTools.dll",
-        "lib/net462/Design/DevExpress.Xpf.Core.v24.2.DesignTools.dll.config",
-        "lib/net462/Design/DevExpress.Xpf.Themes.VS2019Blue.v24.2.dll",
-        "lib/net462/Design/DevExpress.Xpf.Themes.VS2019Dark.v24.2.dll",
-        "lib/net462/Design/DevExpress.Xpf.Themes.VS2019Light.v24.2.dll",
-        "lib/net462/Design/Server/DesignerRunner.exe",
-        "lib/net462/DevExpress.Xpf.Core.v24.2.dll",
-        "lib/net462/DevExpress.Xpf.Core.v24.2.xml",
-        "lib/net8.0-windows/Design/DevExpress.Xpf.Core.v24.2.DesignTools.dll",
-        "lib/net8.0-windows/Design/DevExpress.Xpf.Core.v24.2.DesignTools.dll.config",
-        "lib/net8.0-windows/Design/Server/DesignerRunner.dll",
-        "lib/net8.0-windows/Design/Server/DesignerRunner.exe",
-        "lib/net8.0-windows/Design/Server/DesignerRunner.runtimeconfig.json",
-        "lib/net8.0-windows/DevExpress.Xpf.Core.v24.2.dll",
-        "lib/net8.0-windows/DevExpress.Xpf.Core.v24.2.xml",
-        "tools/VisualStudioToolsManifest.xml"
-      ]
-    },
-    "DevExpress.Wpf.Themes.Office2019Colorful/24.2.6": {
-      "sha512": "Jg4cbblhJHUWfTjylsAi6ghuYfl2/YyhQthCKFLiDDj0WOoIVSu0xvGAvVpVymf6Q/zYpQYyhVcS3GuOQO0X5w==",
-      "type": "package",
-      "path": "devexpress.wpf.themes.office2019colorful/24.2.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "devexpress.wpf.themes.office2019colorful.24.2.6.nupkg.sha512",
-        "devexpress.wpf.themes.office2019colorful.nuspec",
-        "lib/net462/DevExpress.Xpf.Themes.Office2019Colorful.v24.2.dll",
-        "lib/net8.0-windows/DevExpress.Xpf.Themes.Office2019Colorful.v24.2.dll"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -1619,25 +985,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.ObjectPool/6.0.16": {
-      "sha512": "OVX5tlKg6LY+XKqlUn7i9KY+6Liut0iewWff2DNr7129i/NJ8rpUzbmxavPydZgcLREEWHklXZiPKCS895tNIQ==",
-      "type": "package",
-      "path": "microsoft.extensions.objectpool/6.0.16",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.Extensions.ObjectPool.dll",
-        "lib/net461/Microsoft.Extensions.ObjectPool.xml",
-        "lib/net6.0/Microsoft.Extensions.ObjectPool.dll",
-        "lib/net6.0/Microsoft.Extensions.ObjectPool.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.ObjectPool.xml",
-        "microsoft.extensions.objectpool.6.0.16.nupkg.sha512",
-        "microsoft.extensions.objectpool.nuspec"
-      ]
-    },
     "Microsoft.Extensions.Options/8.0.2": {
       "sha512": "dWGKvhFybsaZpGmzkGCbNNwBD1rVlWzrZKANLW/CcbFJpCEceMCGzT7zZwHOGBCbwM0SzBuceMj5HN1LKV1QqA==",
       "type": "package",
@@ -1890,24 +1237,6 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
-    "Microsoft.NETCore.Platforms/3.1.4": {
-      "sha512": "9/y05/CuxE+j184Nr4KihhB9KcUkvGojmD4JV4Vt/mHhVZR+eOCD5WCM+CXye9K0OFMsaPXbN+IcaIpjgBGZmg==",
-      "type": "package",
-      "path": "microsoft.netcore.platforms/3.1.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.3.1.4.nupkg.sha512",
-        "microsoft.netcore.platforms.nuspec",
-        "runtime.json",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "Microsoft.SqlServer.Server/1.0.0": {
       "sha512": "N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug==",
       "type": "package",
@@ -1924,35 +1253,6 @@
         "lib/netstandard2.0/Microsoft.SqlServer.Server.xml",
         "microsoft.sqlserver.server.1.0.0.nupkg.sha512",
         "microsoft.sqlserver.server.nuspec"
-      ]
-    },
-    "Microsoft.Win32.SystemEvents/4.7.0": {
-      "sha512": "mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
-      "type": "package",
-      "path": "microsoft.win32.systemevents/4.7.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.Win32.SystemEvents.dll",
-        "lib/net461/Microsoft.Win32.SystemEvents.xml",
-        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
-        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-        "microsoft.win32.systemevents.nuspec",
-        "ref/net461/Microsoft.Win32.SystemEvents.dll",
-        "ref/net461/Microsoft.Win32.SystemEvents.xml",
-        "ref/net472/Microsoft.Win32.SystemEvents.dll",
-        "ref/net472/Microsoft.Win32.SystemEvents.xml",
-        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
-        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
-        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.xml",
-        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
-        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.ClientModel/1.0.0": {
@@ -2000,42 +1300,6 @@
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
         "system.configuration.configurationmanager.8.0.1.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Data.OleDb/8.0.1": {
-      "sha512": "RO+/y2ggU5956uQDRXdjA1e2l5yJ4rTWNX76eZ+3sgtYGqGapCe2kQCyiUci+/y6Fyb21Irp4RQEdfrIiuYrxQ==",
-      "type": "package",
-      "path": "system.data.oledb/8.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Data.OleDb.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Data.OleDb.targets",
-        "lib/net462/System.Data.OleDb.dll",
-        "lib/net462/System.Data.OleDb.xml",
-        "lib/net6.0/System.Data.OleDb.dll",
-        "lib/net6.0/System.Data.OleDb.xml",
-        "lib/net7.0/System.Data.OleDb.dll",
-        "lib/net7.0/System.Data.OleDb.xml",
-        "lib/net8.0/System.Data.OleDb.dll",
-        "lib/net8.0/System.Data.OleDb.xml",
-        "lib/netstandard2.0/System.Data.OleDb.dll",
-        "lib/netstandard2.0/System.Data.OleDb.xml",
-        "runtimes/win/lib/net6.0/System.Data.OleDb.dll",
-        "runtimes/win/lib/net6.0/System.Data.OleDb.xml",
-        "runtimes/win/lib/net7.0/System.Data.OleDb.dll",
-        "runtimes/win/lib/net7.0/System.Data.OleDb.xml",
-        "runtimes/win/lib/net8.0/System.Data.OleDb.dll",
-        "runtimes/win/lib/net8.0/System.Data.OleDb.xml",
-        "system.data.oledb.8.0.1.nupkg.sha512",
-        "system.data.oledb.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -2101,82 +1365,6 @@
         "system.diagnostics.eventlog.8.0.1.nupkg.sha512",
         "system.diagnostics.eventlog.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Diagnostics.PerformanceCounter/8.0.1": {
-      "sha512": "9RfEDiEjlUADeThs8IPdDVTXSnPRSqjfgTQJALpmGFPKC0k2mbdufOXnb/9JZ4I0TkmxOfy3VTJxrHOJSs8cXg==",
-      "type": "package",
-      "path": "system.diagnostics.performancecounter/8.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Diagnostics.PerformanceCounter.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Diagnostics.PerformanceCounter.targets",
-        "lib/net462/System.Diagnostics.PerformanceCounter.dll",
-        "lib/net462/System.Diagnostics.PerformanceCounter.xml",
-        "lib/net6.0/System.Diagnostics.PerformanceCounter.dll",
-        "lib/net6.0/System.Diagnostics.PerformanceCounter.xml",
-        "lib/net7.0/System.Diagnostics.PerformanceCounter.dll",
-        "lib/net7.0/System.Diagnostics.PerformanceCounter.xml",
-        "lib/net8.0/System.Diagnostics.PerformanceCounter.dll",
-        "lib/net8.0/System.Diagnostics.PerformanceCounter.xml",
-        "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll",
-        "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.xml",
-        "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.dll",
-        "runtimes/win/lib/net6.0/System.Diagnostics.PerformanceCounter.xml",
-        "runtimes/win/lib/net7.0/System.Diagnostics.PerformanceCounter.dll",
-        "runtimes/win/lib/net7.0/System.Diagnostics.PerformanceCounter.xml",
-        "runtimes/win/lib/net8.0/System.Diagnostics.PerformanceCounter.dll",
-        "runtimes/win/lib/net8.0/System.Diagnostics.PerformanceCounter.xml",
-        "system.diagnostics.performancecounter.8.0.1.nupkg.sha512",
-        "system.diagnostics.performancecounter.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Drawing.Common/4.7.2": {
-      "sha512": "I2y4KBK3VCvU/WqE2xv7NjQ67maXHttkFSHYKgU2evrG9Yqh0oFjfORXt5hZTk+BVjdyFo2h0/YQZsca33BGmg==",
-      "type": "package",
-      "path": "system.drawing.common/4.7.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.Drawing.Common.dll",
-        "lib/netstandard2.0/System.Drawing.Common.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.Drawing.Common.dll",
-        "ref/netcoreapp3.0/System.Drawing.Common.dll",
-        "ref/netcoreapp3.0/System.Drawing.Common.xml",
-        "ref/netstandard2.0/System.Drawing.Common.dll",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
-        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
-        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.xml",
-        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
-        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
-        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
-        "system.drawing.common.4.7.2.nupkg.sha512",
-        "system.drawing.common.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.IdentityModel.Tokens.Jwt/7.5.0": {
@@ -2315,35 +1503,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.AccessControl/6.0.0": {
-      "sha512": "AUADIc0LIEQe7MzC+I0cl0rAT8RrTAKFHl53yHjEUzNVIaUlhFY11vc2ebiVJzVBuOzun6F7FBA+8KAbGTTedQ==",
-      "type": "package",
-      "path": "system.security.accesscontrol/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/System.Security.AccessControl.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Security.AccessControl.dll",
-        "lib/net461/System.Security.AccessControl.xml",
-        "lib/net6.0/System.Security.AccessControl.dll",
-        "lib/net6.0/System.Security.AccessControl.xml",
-        "lib/netstandard2.0/System.Security.AccessControl.dll",
-        "lib/netstandard2.0/System.Security.AccessControl.xml",
-        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
-        "runtimes/win/lib/net461/System.Security.AccessControl.xml",
-        "runtimes/win/lib/net6.0/System.Security.AccessControl.dll",
-        "runtimes/win/lib/net6.0/System.Security.AccessControl.xml",
-        "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.dll",
-        "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.xml",
-        "system.security.accesscontrol.6.0.0.nupkg.sha512",
-        "system.security.accesscontrol.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "System.Security.Cryptography.Pkcs/8.0.1": {
       "sha512": "CoCRHFym33aUSf/NtWSVSZa99dkd0Hm7OCZUxORBjRB16LNhIEOf8THPqzIYlvKM0nNDAPTRBa1FxEECrgaxxA==",
       "type": "package",
@@ -2415,90 +1574,6 @@
         "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Security.Cryptography.Xml/6.0.1": {
-      "sha512": "5e5bI28T0x73AwTsbuFP4qSRzthmU2C0Gqgg3AZ3KTxmSyA+Uhk31puA3srdaeWaacVnHhLdJywCzqOiEpbO/w==",
-      "type": "package",
-      "path": "system.security.cryptography.xml/6.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Xml.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Security.Cryptography.Xml.dll",
-        "lib/net461/System.Security.Cryptography.Xml.xml",
-        "lib/net6.0/System.Security.Cryptography.Xml.dll",
-        "lib/net6.0/System.Security.Cryptography.Xml.xml",
-        "lib/netstandard2.0/System.Security.Cryptography.Xml.dll",
-        "lib/netstandard2.0/System.Security.Cryptography.Xml.xml",
-        "runtimes/win/lib/net461/System.Security.Cryptography.Xml.dll",
-        "runtimes/win/lib/net461/System.Security.Cryptography.Xml.xml",
-        "system.security.cryptography.xml.6.0.1.nupkg.sha512",
-        "system.security.cryptography.xml.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.ServiceModel.Http/6.2.0": {
-      "sha512": "lMk8MEw1OCvyyKY4HMg4ro1eYtWY7azIoDc2FBEGP8uOTJouWn3DemOQvM/GUpgrFbkpjuHPbEG5hgUbNtpiYA==",
-      "type": "package",
-      "path": "system.servicemodel.http/6.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net6.0/System.ServiceModel.Http.dll",
-        "lib/net6.0/System.ServiceModel.Http.pdb",
-        "lib/net6.0/cs/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/de/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/es/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/fr/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/it/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/ja/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/ko/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/pl/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/pt-BR/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/ru/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/tr/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/zh-Hans/System.ServiceModel.Http.resources.dll",
-        "lib/net6.0/zh-Hant/System.ServiceModel.Http.resources.dll",
-        "system.servicemodel.http.6.2.0.nupkg.sha512",
-        "system.servicemodel.http.nuspec"
-      ]
-    },
-    "System.ServiceModel.Primitives/6.2.0": {
-      "sha512": "ro+c4JKNuX6dDpTWh9ZICYr4pIe7uJToauPPgZt2qqFPjVB78ZDUz3rPCZX89dA+IoRZ+9T1ngLBKsgkTmx7UA==",
-      "type": "package",
-      "path": "system.servicemodel.primitives/6.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net6.0/System.ServiceModel.Primitives.dll",
-        "lib/net6.0/System.ServiceModel.Primitives.pdb",
-        "lib/net6.0/cs/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/de/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/es/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/fr/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/it/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/ja/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/ko/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/pl/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/pt-BR/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/ru/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/tr/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/zh-Hans/System.ServiceModel.Primitives.resources.dll",
-        "lib/net6.0/zh-Hant/System.ServiceModel.Primitives.resources.dll",
-        "ref/net6.0/System.ServiceModel.Primitives.dll",
-        "system.servicemodel.primitives.6.2.0.nupkg.sha512",
-        "system.servicemodel.primitives.nuspec"
       ]
     },
     "System.Text.Encodings.Web/4.7.2": {
@@ -2587,31 +1662,27 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "Microsoft.Data.SqlClient >= 6.0.1",
-      "devexpress.wpf.controls >= 24.2.6"
+      "Microsoft.Data.SqlClient >= 6.0.1"
     ]
   },
   "packageFolders": {
     "C:\\Users\\DangNghia\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\.DotNet\\ADO\\QLSV\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj",
+      "projectUniqueName": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj",
       "projectName": "Quan_Ly_Sinh_Vien_KT",
-      "projectPath": "E:\\.DotNet\\ADO\\QLSV\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj",
+      "projectPath": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT.csproj",
       "packagesPath": "C:\\Users\\DangNghia\\.nuget\\packages\\",
-      "outputPath": "E:\\.DotNet\\ADO\\QLSV\\Quan_Ly_Sinh_Vien_KT\\obj\\",
+      "outputPath": "D:\\ADO_Net\\Quan_Ly_Sinh_Vien_KT\\Quan_Ly_Sinh_Vien_KT\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\DangNghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 24.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2620,7 +1691,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 24.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -2649,10 +1719,6 @@
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[6.0.1, )"
-          },
-          "devexpress.wpf.controls": {
-            "target": "Package",
-            "version": "[24.2.6, )"
           }
         },
         "imports": [
@@ -2670,11 +1736,11 @@
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           },
-          "Microsoft.WindowsDesktop.App": {
+          "Microsoft.WindowsDesktop.App.WPF": {
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

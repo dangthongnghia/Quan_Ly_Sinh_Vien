@@ -137,10 +137,29 @@ GO
 
 
 
-INSERT INTO [User](
-    [IdStudent], [Username], [Password], [Note], [Status], [CreatedAt], [ModifiedAt]
-)
-VALUES
-('Ad00001', 'Admin', 'Admin123@', N'Ghi chú cho Ad00001', 1, '2025-04-01 08:30:00', '2025-04-01 08:30:00')
+-- Thêm sinh viên Admin (cần có bản ghi trong bảng Student trước vì có khóa ngoại)
+INSERT INTO [Student] ([Id], [Name], [BOF], [IdProvince], [Gender])
+VALUES (N'ADMIN01', N'System Administrator', N'1990-01-01 00:00:00.000', N'2', N'1');
 
- 
+-- Thêm tài khoản Admin vào bảng User
+INSERT INTO [User] ([IdStudent], [Username], [Password], [Note], [Status], [CreatedAt], [ModifiedAt])
+VALUES (N'ADMIN01', N'admin', N'Admin@123', N'Tài khoản quản trị hệ thống', 1, GETDATE(), GETDATE());
+
+-- Thêm bản ghi UserRole để gán quyền Admin cho tài khoản này
+INSERT INTO [UserRole] ([Id], [IdStudent], [IdRole])
+VALUES (N'UR001', N'ADMIN01', N'R1');
+
+
+SELECT COUNT(*) FROM [UserRole] WHERE IdStudent = @IdStudent AND IdRole = @IdRole
+
+
+SELECT ur.Id, ur.IdStudent, ur.IdRole, 
+       u.Username,                     
+       u.IdStudent as StudentId,      
+       s.Name as StudentName,         
+       r.Name as RoleName 
+FROM UserRole ur
+INNER JOIN [User] u ON ur.IdStudent = u.IdStudent  -- Đã sửa điều kiện này
+INNER JOIN Role r ON ur.IdRole = r.Id
+LEFT JOIN Student s ON u.IdStudent = s.Id;
+       

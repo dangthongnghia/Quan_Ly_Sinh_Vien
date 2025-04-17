@@ -58,7 +58,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
                        s.Name as StudentName,         
                        r.Name as RoleName 
                        FROM UserRole ur
-                       INNER JOIN [User] u ON ur.IdStudent = u.Username
+                       INNER JOIN [User] u ON ur.IdStudent = u.IdStudent
                        INNER JOIN Role r ON ur.IdRole = r.Id
                        LEFT JOIN Student s ON u.IdStudent = s.Id"; 
         
@@ -76,7 +76,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
                 MessageBox.Show("Lỗi kết nối: " + ex.Message);
             }
         }
-        }
+        
 
         private void LoadUsers()
         {

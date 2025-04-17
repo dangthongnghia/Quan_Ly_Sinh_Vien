@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Quan_Ly_Sinh_Vien_KT"
         mc:Ignorable="d"
-        Title="Đăng nhập - Hệ thống Quản lý Sinh viên" Height="300" Width="400" 
+        Title="Đăng nhập - Hệ thống Quản lý Sinh viên" Height="364" Width="400" 
         WindowStartupLocation="CenterScreen">
     <Grid Background="#F0F0F0">
         <Grid.RowDefinitions>

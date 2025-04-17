@@ -54,18 +54,9 @@
         <DataGrid Grid.Row="2" x:Name="dgSubjects" AutoGenerateColumns="False" 
                   IsReadOnly="True" AlternatingRowBackground="#F5F5F5">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã môn học" Binding="{Binding IdSubject}" Width="100"/>
+                <DataGridTextColumn Header="Mã môn học" Binding="{Binding Id}" Width="100"/>
                 <DataGridTextColumn Header="Tên môn học" Binding="{Binding Name}" Width="*"/>
-                <DataGridTemplateColumn Header="Thao tác" Width="100">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Button Content="Sửa" Margin="2" Padding="5,0"/>
-                                <Button Content="Xóa" Margin="2" Padding="5,0"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
+                
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

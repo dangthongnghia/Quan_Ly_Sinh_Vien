@@ -65,16 +65,7 @@
                 <DataGridTextColumn Header="Họ và tên" Binding="{Binding Name}" Width="*"/>
                 <DataGridTextColumn Header="Ngày sinh" Binding="{Binding BOF, StringFormat=dd/MM/yyyy}" Width="120"/>
                 <DataGridTextColumn Header="Tỉnh/Thành phố" Binding="{Binding Province}" Width="150"/>
-                <DataGridTemplateColumn Header="Thao tác" Width="100">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Button Content="Sửa" Margin="2" Padding="5,0"/>
-                                <Button Content="Xóa" Margin="2" Padding="5,0"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
+                
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

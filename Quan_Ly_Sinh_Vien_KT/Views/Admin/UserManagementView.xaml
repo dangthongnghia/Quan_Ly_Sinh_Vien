@@ -71,16 +71,7 @@
                 <DataGridTextColumn Header="Id sinh viên" Binding="{Binding IdStudent}" Width="120"/>
                 <DataGridTextColumn Header="Tên đăng nhập" Binding="{Binding Username}" Width="*"/>
                 <DataGridCheckBoxColumn Header="Trạng thái" Binding="{Binding Status}" Width="80"/>
-                <DataGridTemplateColumn Header="Thao tác" Width="100">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <Button Content="Sửa" Margin="2" Padding="5,0"/>
-                                <Button Content="Xóa" Margin="2" Padding="5,0"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
+                
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
