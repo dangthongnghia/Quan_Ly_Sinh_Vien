@@ -7,66 +7,137 @@
              xmlns:local="clr-namespace:Quan_Ly_Sinh_Vien_KT"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="700">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Text="QUẢN LÝ SINH VIÊN" 
-                   FontSize="20" FontWeight="Bold" Margin="0,10,0,20"/>
+    <UserControl.Resources>
+        <!-- Style for text labels -->
+        <Style x:Key="LabelStyle" TargetType="TextBlock">
+            <Setter Property="Margin" Value="5,5,15,5"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
 
-        <!-- Form for adding/editing students -->
-        <Grid Grid.Row="1" Margin="0,0,0,10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <!-- Style for input controls -->
+        <Style x:Key="InputStyle" TargetType="Control">
+            <Setter Property="Margin" Value="5,5,5,5"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Height" Value="32"/>
+        </Style>
 
+        <!-- Style for buttons -->
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+    </UserControl.Resources>
+
+    <Border Background="White" CornerRadius="8" Margin="10">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.2"/>
+        </Border.Effect>
+
+        <Grid Margin="15">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="Mã sinh viên:" Margin="5"/>
-            <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtStudentId" Margin="5" Padding="3"/>
+            <!-- Header Section -->
+            <Border Grid.Row="0" BorderBrush="#EEEEEE" BorderThickness="0,0,0,1" Padding="0,0,0,15">
+                <TextBlock Text="QUẢN LÝ SINH VIÊN" 
+                        FontSize="22" FontWeight="Bold" Foreground="#2196F3"/>
+            </Border>
 
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="Họ và tên:" Margin="5"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtStudentName" Margin="5" Padding="3"/>
+            <!-- Form for adding/editing students -->
+            <Border Grid.Row="1" BorderBrush="#EEEEEE" BorderThickness="0,0,0,1" Padding="0,15,0,15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row="2" Grid.Column="0" Text="Ngày sinh:" Margin="5"/>
-            <DatePicker Grid.Row="2" Grid.Column="1" x:Name="dpBirthday" Margin="5"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="3" Grid.Column="0" Text="Tỉnh/Thành phố:" Margin="5"/>
-            <ComboBox Grid.Row="3" Grid.Column="1" x:Name="cbProvince" Margin="5" Padding="3"/>
+                    <!-- Student ID -->
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Mã sinh viên:" Style="{StaticResource LabelStyle}"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtStudentId" Style="{StaticResource InputStyle}"/>
 
-            <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" 
-                        Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,5">
-                <Button x:Name="btnAddStudent" Content="Thêm mới" Width="90" Height="30" Margin="5"
-                        Background="#2196F3" Foreground="White"/>
-                <Button x:Name="btnUpdateStudent" Content="Cập nhật" Width="90" Height="30" Margin="5"
-                        Background="#FF9800" Foreground="White"/>
-                <Button x:Name="btnDeleteStudent" Content="Xóa" Width="90" Height="30" Margin="5"
-                        Background="#F44336" Foreground="White"/>
-                <Button x:Name="btnClearStudent" Content="Làm mới" Width="90" Height="30" Margin="5"
-                        Background="#607D8B" Foreground="White"/>
-            </StackPanel>
+                    <!-- Student Name -->
+                    <TextBlock Grid.Row="1" Grid.Column="0" Text="Họ và tên:" Style="{StaticResource LabelStyle}"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtStudentName" Style="{StaticResource InputStyle}"/>
+
+                    <!-- Birthday -->
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Ngày sinh:" Style="{StaticResource LabelStyle}"/>
+                    <DatePicker Grid.Row="2" Grid.Column="1" x:Name="dpBirthday" Style="{StaticResource InputStyle}"/>
+
+                    <!-- Province -->
+                    <TextBlock Grid.Row="3" Grid.Column="0" Text="Tỉnh/Thành phố:" Style="{StaticResource LabelStyle}"/>
+                    <ComboBox Grid.Row="3" Grid.Column="1" x:Name="cbProvince" Style="{StaticResource InputStyle}"/>
+
+                    <!-- Gender -->
+                    <TextBlock Grid.Row="4" Grid.Column="0" Text="Giới tính:" Style="{StaticResource LabelStyle}"/>
+                    <ComboBox Grid.Row="4" Grid.Column="1" x:Name="cbGender" Style="{StaticResource InputStyle}"
+                            ItemsSource="{Binding GenderOptions}" SelectedItem="{Binding SelectedGender, Mode=TwoWay}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" />
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+                    <!-- Buttons -->
+                    <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" 
+                                Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                        <Button x:Name="btnAddStudent" Content="Thêm mới" Style="{StaticResource ButtonStyle}"
+                                Background="#2196F3" Foreground="White"/>
+                        <Button x:Name="btnUpdateStudent" Content="Cập nhật" Style="{StaticResource ButtonStyle}"
+                                Background="#FF9800" Foreground="White"/>
+                        <Button x:Name="btnDeleteStudent" Content="Xóa" Style="{StaticResource ButtonStyle}"
+                                Background="#F44336" Foreground="White"/>
+                        <Button x:Name="btnClearStudent" Content="Làm mới" Style="{StaticResource ButtonStyle}"
+                                Background="#607D8B" Foreground="White"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!-- Data grid for displaying students -->
+            <Grid Grid.Row="2" Margin="0,15,0,0">
+                <DataGrid x:Name="dgStudents" AutoGenerateColumns="False" 
+                        IsReadOnly="True" AlternatingRowBackground="#F5F5F5"
+                        BorderThickness="1" BorderBrush="#DDDDDD"
+                        CanUserAddRows="False" CanUserDeleteRows="False"
+                        HeadersVisibility="Column">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="Background" Value="#E3F2FD"/>
+                            <Setter Property="FontWeight" Value="SemiBold"/>
+                            <Setter Property="Padding" Value="10,8"/>
+                            <Setter Property="BorderThickness" Value="0,0,1,0"/>
+                            <Setter Property="BorderBrush" Value="#BBDEFB"/>
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã SV" Binding="{Binding Id}" Width="100"/>
+                        <DataGridTextColumn Header="Họ và tên" Binding="{Binding Name}" Width="*"/>
+                        <DataGridTextColumn Header="Ngày sinh" Binding="{Binding BOF, StringFormat=dd/MM/yyyy}" Width="120"/>
+                        <DataGridTextColumn Header="Tỉnh/Thành phố" Binding="{Binding Province}" Width="150"/>
+                        <DataGridTextColumn Header="Giới tính" Binding="{Binding Gender}" Width="100"/>
+                        
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
         </Grid>
-
-        <!-- Data grid for displaying students -->
-        <DataGrid Grid.Row="2" x:Name="dgStudents" AutoGenerateColumns="False" 
-                  IsReadOnly="True" AlternatingRowBackground="#F5F5F5">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Mã SV" Binding="{Binding Id}" Width="100"/>
-                <DataGridTextColumn Header="Họ và tên" Binding="{Binding Name}" Width="*"/>
-                <DataGridTextColumn Header="Ngày sinh" Binding="{Binding BOF, StringFormat=dd/MM/yyyy}" Width="120"/>
-                <DataGridTextColumn Header="Tỉnh/Thành phố" Binding="{Binding Province}" Width="150"/>
-                
-            </DataGrid.Columns>
-        </DataGrid>
-    </Grid>
+    </Border>
 </UserControl>

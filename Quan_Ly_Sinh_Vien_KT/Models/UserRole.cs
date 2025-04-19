@@ -8,7 +8,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Models
 {
     class UserRole
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         public string IdStudent { get; set; }
         public string IdRole { get; set; }

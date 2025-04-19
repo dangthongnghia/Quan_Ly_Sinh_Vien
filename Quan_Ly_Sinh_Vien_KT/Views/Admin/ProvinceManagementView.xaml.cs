@@ -204,5 +204,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
             txtProvinceId.IsEnabled = true;
             dgProvinces.SelectedItem = null;
         }
+
+       
     }
 }

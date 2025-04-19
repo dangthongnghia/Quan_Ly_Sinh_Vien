@@ -35,7 +35,7 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
             LoadUserRoles();
             LoadUsers();
             LoadRoles();
-            GenerateNextId();
+            //GenerateNextId();
             // Thêm sự kiện click cho các nút
             btnAssignRole.Click += BtnAssignRole_Click;
             btnRemoveRole.Click += BtnRemoveRole_Click;
@@ -152,39 +152,15 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
                     return;
                 }
 
-                // Kiểm tra xem Id đã được nhập chưa
-                if (string.IsNullOrWhiteSpace(txtId.Text))
-                {
-                    MessageBox.Show("Vui lòng nhập ID!");
-                    return;
-                }
-
-                // Kiểm tra Id có phải là số nguyên không
-                if (!int.TryParse(txtId.Text, out int id))
-                {
-                    MessageBox.Show("ID phải là số nguyên!");
-                    return;
-                }
-
-                // Kiểm tra xem Id đã tồn tại chưa
-                conn = new SqlConnection(connStr);
-                conn.Open();
-                string checkIdQuery = "SELECT COUNT(*) FROM [UserRole] WHERE Id = @Id";
-                cmd = new SqlCommand(checkIdQuery, conn);
-                cmd.Parameters.AddWithValue("@Id", id);
-                int idCount = (int)cmd.ExecuteScalar();
-
-                if (idCount > 0)
-                {
-                    MessageBox.Show("ID này đã tồn tại, vui lòng nhập ID khác!");
-                    conn.Close();
-                    return;
-                }
+                // Lấy Id của người dùng từ combobox
+                string idUser = cbUser.SelectedValue.ToString();
 
                 // Kiểm tra xem phân quyền đã tồn tại chưa
+                conn = new SqlConnection(connStr);
+                conn.Open();
                 string checkQuery = "SELECT COUNT(*) FROM [UserRole] WHERE IdStudent = @IdStudent AND IdRole = @IdRole";
                 cmd = new SqlCommand(checkQuery, conn);
-                cmd.Parameters.AddWithValue("@IdStudent", cbUser.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@IdStudent", idUser);
                 cmd.Parameters.AddWithValue("@IdRole", cbRole.SelectedValue);
                 int count = (int)cmd.ExecuteScalar();
 
@@ -195,11 +171,11 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
                     return;
                 }
 
-                // Tiến hành phân quyền cho người dùng với Id được nhập
+                // Tiến hành phân quyền cho người dùng với Id giống IdUser
                 string query = "INSERT INTO UserRole (Id, IdStudent, IdRole) VALUES (@Id, @IdStudent, @IdRole)";
                 cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Id", id);
-                cmd.Parameters.AddWithValue("@IdStudent", cbUser.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@Id", idUser); // Sử dụng IdUser làm Id
+                cmd.Parameters.AddWithValue("@IdStudent", idUser);
                 cmd.Parameters.AddWithValue("@IdRole", cbRole.SelectedValue);
 
                 int result = cmd.ExecuteNonQuery();
@@ -268,24 +244,34 @@ namespace Quan_Ly_Sinh_Vien_KT.Views.Admin
             }
         }
 
-        private void GenerateNextId()
-        {
-            try
-            {
-                conn = new SqlConnection(connStr);
-                conn.Open();
-                string query = "SELECT ISNULL(MAX(Id), 0) + 1 FROM UserRole";
-                cmd = new SqlCommand(query, conn);
-                object result = cmd.ExecuteScalar();
-                int nextId = Convert.ToInt32(result);
-                txtId.Text = nextId.ToString();
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi tạo ID: " + ex.Message);
-            }
-        }
+        //private void GenerateNextId()
+        //{
+        //    try
+        //    {
+        //        conn = new SqlConnection(connStr);
+        //        conn.Open();
+
+        //        // Modify the query to handle string-based IDs
+        //        string query = "SELECT TOP 1 Id FROM [User] ORDER BY Id DESC";
+        //        cmd = new SqlCommand(query, conn);
+        //        object result = cmd.ExecuteScalar();
+
+        //        if (result != null)
+        //        {
+        //            txtId.Text = result.ToString(); // Use the latest User ID as the next ID
+        //        }
+        //        else
+        //        {
+        //            txtId.Text = "SV0000001"; // Default ID if no records exist
+        //        }
+
+        //        conn.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Lỗi khi tạo ID: " + ex.Message);
+        //    }
+        //}
 
 
         private void ClearSelections()

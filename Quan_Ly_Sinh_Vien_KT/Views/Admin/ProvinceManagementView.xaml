@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" Text="QUẢN LÝ TỈNH/THÀNH PHỐ" 
-                   FontSize="20" FontWeight="Bold" Margin="0,10,0,20"/>
+                   FontSize="20" FontWeight="Bold" Margin="0,10,0,20" Foreground="#2196F3"/>
 
         <!-- Form for adding/editing provinces -->
         <Grid Grid.Row="1" Margin="0,0,0,10">
@@ -39,7 +39,7 @@
             <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" 
                         Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,15,0,5">
                 <Button x:Name="btnAddProvince" Content="Thêm mới" Width="90" Height="30" Margin="5"
-                        Background="#2196F3" Foreground="White"/>
+                        Background="#2196F3" Foreground="White" Click="BtnAddProvince_Click"/>
                 <Button x:Name="btnUpdateProvince" Content="Cập nhật" Width="90" Height="30" Margin="5"
                         Background="#FF9800" Foreground="White"/>
                 <Button x:Name="btnDeleteProvince" Content="Xóa" Width="90" Height="30" Margin="5"
